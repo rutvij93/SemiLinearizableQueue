@@ -1,0 +1,8 @@
+java QueueTest <qname> <threads> <duration> [<n>]
+
+where qname is either LQueue for linearizable queue or SLQueue for semilinearizable
+queue, threads > 0 is the number of test threads, duration > 0
+is the duration of the test in seconds and n is the value of n for the semilinearizable
+queue (n is not required when LQueue is supplied as the qname).
+Each thread should perform both enqueue and dequeue repeatedly with equal
+probability.
